@@ -1,0 +1,89 @@
+1. Greatest of 2 nos.
+
+package com.demo;
+
+public class ifdemo {
+
+	public static void main(String[] args) {
+		
+		
+		int first = 500;
+	     int second = 700;
+	    
+	     
+	     if(first > second)
+	     {
+	         	 
+	        	  System.out.println("Greatest : "+ first);
+	     }
+	        	  else {
+	        		  System.out.println("Greatest:"+second);
+	        	  };
+	          }
+	    
+
+	}
+2. Greatest of 3 nos.
+
+package com.demo;
+
+public class ifdemo {
+
+	public static void main(String[] args) {
+		
+		
+		int first = 500;
+	     int second = 700;
+	     int third = 800;
+	     
+	     if(first > second)
+	     {
+	         	 
+	     	 if(first > third)
+	          {
+	        	  System.out.println("Greatest : "+ first);
+	          }
+	     }
+if(second>third)
+	     {
+	    	 if(second>first)
+	    	 {
+	    	      System.out.println("Greatest : "+ second);      		 
+	    		    		 
+	    	 }
+	     }
+	     if(third>first)
+	     {
+	    	 if(third >second)
+	    	 {
+	    	      System.out.println("Greatest : "+ third);      		 
+	    		    		 
+	    	 }
+	     }
+
+	}
+
+}
+
+3. Greatest of 4 nos.
+
+package com.demo;
+
+public class ifdemo  {
+
+	public static void main(String[] args) {		
+		int n1 = 65, n2 = 66, n3 = 188, n4 = 66;
+		
+		if(n1>n2 && n1>n3 && n1>n4) {
+			System.out.println(n1+ " is greatest");
+		} else if(n2>n1 && n2>n3 && n2>n4) {
+			System.out.println(n2+ " is greatest");
+		} else if(n3>n1 && n3>n2 && n3>n4) {
+			System.out.println(n3+ " is greatest");
+		} else {
+			System.out.println(n4+ " is greatest");
+		}
+		
+	}
+
+
