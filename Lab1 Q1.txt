@@ -1,0 +1,38 @@
+public class Main {
+      public static void main (String[] args) {
+
+           int inp = 2;
+
+            if(checkStrong(inp)) {
+                  System.out.println(inp + " is a strong numbrer.");
+      } else {
+                 System.out.println(inp + " is not a strong number.");
+      }
+
+   }
+   //user defined method to check strong number
+   static boolean checkStrong(int inputNumber) {
+
+            int factorial[] = new int[10];
+
+            factorial[0] = factorial[1] = 1;
+
+            for (int i = 2; i<10; ++i)
+         factorial[i] = factorial[i-1] * i;
+
+            int sum = 0;
+
+      
+      int temp = inputNumber;
+
+            while (temp>0) {
+
+                  sum += factorial[temp%10];
+
+                  temp /= 10;
+      }
+
+
+      return (sum == inputNumber);
+   }
+}
