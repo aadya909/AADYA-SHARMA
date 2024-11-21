@@ -1,0 +1,44 @@
+class User {
+    
+    private String name;
+    private int age;
+
+
+    public User(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+class Employee extends User {
+    private double salary;
+    public Employee(String name, int age, double salary) {
+        super(name, age); // Call to parent class constructor
+        this.salary = salary;
+    }
+
+    public void displaySalaryDetails() {
+        // Access parent class details using methods
+        System.out.println("Employee Name: " + getName());
+        System.out.println("Employee Age: " + getAge());
+        System.out.println("Employee Salary: $" + salary);
+    }
+}
+
+public class InheritanceDemo {
+    public static void main(String[] args) {
+      
+        Employee employee = new Employee("Alice", 30, 75000);
+
+        employee.displaySalaryDetails();
+    }
+}

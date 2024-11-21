@@ -1,0 +1,18 @@
+public class ShiftOperatorsDemo {
+    public static void main(String[] args) {
+                int number = 8; 
+
+       
+        int leftShiftBy1 = number << 1; // Shift left by 1 place
+        int leftShiftBy2 = number << 2; // Shift left by 2 places
+
+        int rightShiftBy1 = number >> 1; // Shift right by 1 place
+        int rightShiftBy2 = number >> 2; // Shift right by 2 places
+
+        System.out.println("Original number: " + number);
+        System.out.println("Left shift by 1: " + leftShiftBy1 + " (Binary: " + Integer.toBinaryString(leftShiftBy1) + ")");
+        System.out.println("Left shift by 2: " + leftShiftBy2 + " (Binary: " + Integer.toBinaryString(leftShiftBy2) + ")");
+        System.out.println("Right shift by 1: " + rightShiftBy1 + " (Binary: " + Integer.toBinaryString(rightShiftBy1) + ")");
+        System.out.println("Right shift by 2: " + rightShiftBy2 + " (Binary: " + Integer.toBinaryString(rightShiftBy2) + ")");
+    }
+}

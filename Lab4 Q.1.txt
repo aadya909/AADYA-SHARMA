@@ -1,0 +1,24 @@
+
+class HillStations {
+    void location() {
+        System.out.println("Location of Hill Station");
+    }
+
+    void famousFor() {
+        System.out.println("Famous for something");
+    }
+}
+
+
+class Manali extends HillStations {
+    @Override
+    void location() {
+        System.out.println("Manali is located in Himachal Pradesh.");
+    }
+
+    @Override
+    void famousFor() {
+        System.out.println("Manali is famous for its scenic beauty and adventure sports.");
+    }
+}
+
